@@ -1,0 +1,128 @@
+*, *::before, *::after {
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px; }
+
+.main-header {
+  text-align: center;
+  position: relative;
+  margin: 0 auto; }
+
+.main-menu {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin: 0 auto; }
+
+.main-menu__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column; }
+
+.main-menu__list__item {
+  text-align: center;
+  border-bottom: 1px solid #ececec;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-size: 17px;
+  font-weight: bold;
+  height: 80px; }
+  .main-menu__list__item > a {
+    text-decoration: none;
+    color: black; }
+
+.menu-button {
+  background-color: white;
+  border: none;
+  position: absolute;
+  height: 22px;
+  width: 30px;
+  top: -80px;
+  right: 20px; }
+
+.secondary-menu__list {
+  display: none; }
+
+.secondary-menu__other {
+  display: none; }
+
+.menu-burger {
+  width: 20px;
+  height: 2px;
+  background-color: black; }
+  .menu-burger:before {
+    display: block;
+    content: "";
+    background-color: black;
+    border: none;
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    top: 4px; }
+  .menu-burger:after {
+    display: block;
+    content: "";
+    background-color: black;
+    border: none;
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    bottom: 4px; }
+
+.logo {
+  text-align: center;
+  color: black;
+  border-bottom: 1px solid #ececec;
+  padding-top: 20px;
+  padding-bottom: 20px; }
+
+.image-logo {
+  height: 80px; }
+
+@media screen and (min-width: 768px) {
+  .main-header {
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 90px;
+    border-bottom: 1px solid #ececec; }
+  .main-menu {
+    flex-direction: row;
+    margin: 0 0;
+    flex-wrap: wrap;
+    width: 70%; }
+  .main-menu__list {
+    flex-direction: row; }
+  .menu-button {
+    display: none; }
+  .logo {
+    display: flex;
+    width: 175px;
+    border: none;
+    height: 90px;
+    border: 1px solid red;
+    margin-right: auto; }
+  .main {
+    order: 3;
+    position: absolute;
+    left: -45%;
+    bottom: -90px; }
+  .main > li {
+    margin-left: 20px; }
+  .main-menu__list__item {
+    border-bottom: none; }
+  .search {
+    width: 25%; }
+  .cart {
+    width: 75%; }
+  .secondary {
+    margin-left: auto; } }
